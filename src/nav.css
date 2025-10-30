@@ -1,0 +1,44 @@
+.nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;     
+    background-color: #385eaa;
+    padding: 10px 40px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    width: 100%;
+}
+
+
+
+.logoImg, .userImg {
+    height: 50px; 
+    width: auto;
+    border-radius: 10px;
+}
+
+
+
+.nav ul {
+    list-style: none; 
+    display: flex; 
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    margin: 0 15px; 
+}
+
+
+
+.nav ul li a {
+    color: #ffffff; /* Color de texto blanco */
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #61dafb; /* Efecto hover (azul claro) */
+}
