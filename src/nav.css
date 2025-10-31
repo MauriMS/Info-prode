@@ -1,44 +1,98 @@
+
 .nav {
     display: flex;
-    justify-content: space-between; 
-    align-items: center;     
-    background-color: #385eaa;
-    padding: 10px 40px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #1a2d3f 0%, #1e3548 100%);
+    padding: 14px 60px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: "Inter", sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 
-
-.logoImg, .userImg {
-    height: 50px; 
-    width: auto;
-    border-radius: 10px;
+.botones-Nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 
+.Contenedor-Logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.4em;
+    font-weight: 700;
+    transition: transform 0.2s ease, color 0.2s ease;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.Contenedor-Logo:hover {
+    transform: scale(1.02);
+    color: #64b5f6;
+}
+
+.logoImg {
+    height: 38px;
+    margin-right: 12px;
+}
+
+.texto-Logo {
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
 
 .nav ul {
-    list-style: none; 
-    display: flex; 
-    padding: 0;
+    display: flex;
+    list-style: none;
     margin: 0;
+    padding: 0;
+    gap: 8px;
 }
 
 .nav ul li {
-    margin: 0 15px; 
+    font-size: 1.05em;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-
-
 .nav ul li a {
-    color: #ffffff; /* Color de texto blanco */
-    text-decoration: none; /* Quitar subrayado */
-    font-size: 1.1rem;
-    font-weight: 500;
+    color: white;
+    color: #c5d3e0;
     transition: color 0.3s ease;
 }
 
-.nav ul li a:hover {
-    color: #61dafb; /* Efecto hover (azul claro) */
+.nav ul li:hover {
+    background-color: rgba(100, 181, 246, 0.15);
+    transform: translateY(-1px);
+}
+
+.nav ul li:hover a {
+    color: #64b5f6;
+}
+
+.img-usuario {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 0 2px rgba(100, 181, 246, 0.3), 0 2px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+.img-usuario:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 0 3px rgba(100, 181, 246, 0.6), 0 4px 12px rgba(0, 0, 0, 0.4);
 }
