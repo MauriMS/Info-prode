@@ -1,12 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Nav from './nav'
-import EncabezadoPag from './EncabezadoPag'
+import App from './app'
+import "./contenedorCars.css"
+import "./normalize.css"
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Nav/>
-    <EncabezadoPag tittle="Torneos Activos" />
+    <App/>
   </StrictMode>,
 )
