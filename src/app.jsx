@@ -6,7 +6,7 @@ import TorneosCards from './TorneosCards'
 const torneos = [
     {
         titulo      :"Copa del mundo 2026",
-        imgLink     :'../public/Mundial.jpeg',
+        imgLink     :'./assets/Mundial.jpeg',
         descripcion :"Inicia Junio 2026",
         fase        :"Fases de grupos",
         estado      :"Proximo",
@@ -14,7 +14,7 @@ const torneos = [
         
     {
         titulo      :"F1 2026",
-        imgLink     :'../public/f1.webp',
+        imgLink     :'./assets/f1.webp',
         descripcion :"Inicia Junio 2026",
         fase        :"Fases de grupos",
         estado      :"Activo",
@@ -22,7 +22,7 @@ const torneos = [
 
     {
         titulo      :"Moto Gp 2026",
-        imgLink     :'../public/motoGp.jpg',
+        imgLink     :'./assets/motoGp.jpg',
         descripcion :"Inicia Junio 2026",
         fase        :"Fases de grupos",
         estado      :"Activo"
@@ -30,7 +30,7 @@ const torneos = [
 
     {
         titulo      :"UCL 2026",
-        imgLink     :'../public/ucl.avif',
+        imgLink     :'./assets/ucl.avif',
         descripcion :"Inicia Junio 2026",
         fase        :"Fases de grupos",
         estado      :"Inactivo"
@@ -38,7 +38,7 @@ const torneos = [
 
     {
         titulo      :"Copa libertadores 2026",
-        imgLink     :'../public/libertadores.jpg',
+        imgLink     :'./assets/libertadores.jpg',
         descripcion :"Inicia Junio 2026",
         fase        :"Fases de grupos",
         estado      :"Inactivo"
@@ -46,7 +46,7 @@ const torneos = [
 
     {
         titulo      :"Copa libertadores 2026",
-        imgLink     :'../public/libertadores.jpg',
+        imgLink     :'./assets/libertadores.jpg',
         descripcion :"Inicia Junio 2026",
         fase        :"Fases de grupos",
         estado      :"Activo"
