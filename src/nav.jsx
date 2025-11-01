@@ -7,12 +7,12 @@ function Nav(){
         <nav className="nav">
         
             <a href="/" className="Contenedor-Logo">
-                <span className="texto-Logo">MDB-PRODE</span> 
+                <span className="texto-Logo">INFO-PRODE</span> 
             </a>
 
             <div className="botones-Nav">
                 <ul>
-                    <li><a href="/">Inicio</a></li> 
+                    <li><a href="/">Nuevo Torneo</a></li> 
                     <li><a href="/">Predicciones</a></li>
                 </ul>
 

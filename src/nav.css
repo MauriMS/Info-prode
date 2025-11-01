@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #1a2d3f 0%, #1e3548 100%);
+    background:  linear-gradient(145deg, #4b74d3 0%,#485e88 25% ,#485e88 50% ,#313a53 100%);
     padding: 14px 60px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.3);
     position: sticky;
@@ -62,6 +62,7 @@
     padding: 8px 16px;
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
 }
 
 .nav ul li a {

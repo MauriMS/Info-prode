@@ -1,10 +1,9 @@
-
+import './encabezadoPag.css'
 
 function EncabezadoPag(props) {
         return(
         <article>
-        <h2>{props.tittle}</h2>
-        <p>{props.descripcion}</p>
+            <h2>{props.titulo}</h2>
         </article>
     );
     
