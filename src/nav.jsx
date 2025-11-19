@@ -2,18 +2,25 @@
 import userIcon from "../public/vite.svg"
 import './nav.css'
 
-function Nav(){
+function Nav({setNuevoTorneo}){
+
+    const handleNuevoTorneo = (res) => {
+        res.preventDefault();
+        setNuevoTorneo(true);
+        
+    }
+
     return(
         <nav className="nav">
         
             <a href="/" className="Contenedor-Logo">
-                <span className="texto-Logo">INFO-PRODE</span> 
+                <span className="texto-Logo">MDB-PRODE</span> 
             </a>
 
             <div className="botones-Nav">
                 <ul>
-                    <li><a href="/">Nuevo Torneo</a></li> 
-                    <li><a href="/">Predicciones</a></li>
+                    <li><a href="#" onClick={handleNuevoTorneo}>Nuevo Torneo</a></li> 
+                    <li><a href="#">Predicciones</a></li>
                 </ul>
 
                 <a href="/">
