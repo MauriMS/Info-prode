@@ -1,7 +1,6 @@
 
 .torneos-card {
-    /* background: linear-gradient(145deg, #2a2d34 0%, #252831 100%); */
-    background: #1a1c1f;
+    background: #1a1e2b;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
@@ -31,7 +30,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:  linear-gradient(145deg, #4b74d3 0%,#485e88 50% ,#313a53 100%);
+    /* background-color:  linear-gradient(145deg, #4b74d3 0%,#485e88 50% ,#313a53 100%); */
+    background-color: #1a1e2b;
     padding: 5px;
     box-sizing: border-box;
     position: relative;
@@ -96,11 +96,11 @@
     letter-spacing: 0.5px;
 }
 
-.torneos-cardEstado.inactivo {
+.torneos-cardEstado.inactivos {
     background-color: #dc3545;
 }
 
-.torneos-cardEstado.proximo {
+.torneos-cardEstado.proximos {
     background-color: #ffc107;
     color: #333;
 }
