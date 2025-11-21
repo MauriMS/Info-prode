@@ -14,7 +14,7 @@ function Nav({setNuevoTorneo}){
         <nav className="nav">
         
             <a href="/" className="Contenedor-Logo">
-                <span className="texto-Logo">MDB-PRODE</span> 
+                <span className="texto-Logo">INFO-PRODE</span> 
             </a>
 
             <div className="botones-Nav">
