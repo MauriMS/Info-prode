@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './NuevoTorneo.css';
 
+
 const NuevoTorneo = ({ cerrarModal }) => {
   
   
