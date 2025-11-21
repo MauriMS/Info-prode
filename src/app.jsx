@@ -1,66 +1,110 @@
+import { use, useState } from 'react'
 import Nav from './nav'
-import EncabezadoPag from './EncabezadoPag'
 import TorneosCards from './TorneosCards'
+import TorneosHeader from './TorneosHeader'
+import NuevoTorneo from './NuevoTorneo'
 
 // Lista de torneos
 const torneos = [
     {
+        id          :1,
         titulo      :"Copa del mundo 2026",
-        imgLink     :'./assets/Mundial.jpeg',
+        imgLink     :'Mundial.jpeg',
         descripcion :"Inicia Junio 2026",
         fase        :"Fases de grupos",
-        estado      :"Proximo",
+        estado      :"Proximos",
+        link        :"#",
     },
         
     {
+        id          :2,
         titulo      :"F1 2026",
-        imgLink     :'./assets/f1.webp',
+        imgLink     :'f1.webp',
         descripcion :"Inicia Junio 2026",
         fase        :"Fases de grupos",
-        estado      :"Activo",
+        estado      :"Activos",
+        link        :"#",
     },
 
     {
+        id          :3,
         titulo      :"Moto Gp 2026",
-        imgLink     :'./assets/motoGp.jpg',
+        imgLink     :'motoGp.jpg',
         descripcion :"Inicia Junio 2026",
         fase        :"Fases de grupos",
-        estado      :"Activo"
+        estado      :"Activos",
+        link        :"#",
     },
 
-    {
+    {   
+        id          :4,
         titulo      :"UCL 2026",
-        imgLink     :'./assets/ucl.avif',
+        imgLink     :'ucl.avif',
         descripcion :"Inicia Junio 2026",
         fase        :"Fases de grupos",
-        estado      :"Inactivo"
+        estado      :"Inactivos",
+        link        :"#",
     },
 
     {
+        id          :5,
         titulo      :"Copa libertadores 2026",
-        imgLink     :'./assets/libertadores.jpg',
+        imgLink     :'libertadores.jpg',
         descripcion :"Inicia Junio 2026",
         fase        :"Fases de grupos",
-        estado      :"Inactivo"
+        estado      :"Inactivos",
+        link        :"#",
     },
 
     {
+        id          :6,
         titulo      :"Copa libertadores 2026",
-        imgLink     :'./assets/libertadores.jpg',
+        imgLink     :'libertadores.jpg',
         descripcion :"Inicia Junio 2026",
         fase        :"Fases de grupos",
-        estado      :"Activo"
+        estado      :"Activos",
+        link        :"#",
     }
 ]
 
 function App() {
+
+    const [nuevoTorneo,setNuevoTorneo] = useState(false)
+    const [busqueda, setBusqueda] = useState('');
+    const [filtro,setFiltro] = useState({
+        estado: "Todos",
+        anio: 0
+    })
+
+    const filterTorneos = (torneos) =>{
+
+        if (filtro.estado == "Todos"){ return torneos
+
+        }else{
+        
+            return torneos.filter(torneo =>{
+            return(
+                torneo.estado == filtro.estado)
+        })
+        }
+        
+    }
+
+    const torneosFiltrados = filterTorneos(torneos)
+    console.log(torneosFiltrados);
+    
+
     return(
     <div>
-        <Nav/>
-        <EncabezadoPag titulo="Torneos" />
+        <Nav setNuevoTorneo={setNuevoTorneo}/>
+        {nuevoTorneo && (
+            <NuevoTorneo cerrarModal={() => setNuevoTorneo(false)} />
+        )}
+        <TorneosHeader setFiltro={setFiltro} estadoActual={filtro.estado} busqueda={busqueda} setBusqueda={setBusqueda}/>
         <div className='contenedorCars'>
-            {torneos.map(torneo => (
-                <TorneosCards 
+            {torneosFiltrados.map(torneo => (
+                <TorneosCards
+                    key ={torneo.id}
                     titulo={torneo.titulo} 
                     imgLink={torneo.imgLink} 
                     descripcion={torneo.descripcion}
